@@ -21,3 +21,7 @@ contributors: Your Name(s) Here
     1. Return ? ToString(_proposal_).
   </emu-alg>
 </emu-clause>
+
+<emu-clause id="sec-demo-clause-2">
+  <h1>This is another clause</h1>
+</emu-clause>
