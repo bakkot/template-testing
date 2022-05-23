@@ -1,6 +1,9 @@
-name: Build spec
+name: Deploy gh-pages
 
-on: pull_request
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -13,3 +16,8 @@ jobs:
         node-version: 16
     - run: npm install
     - run: npm run build
+    - uses: JamesIves/github-pages-deploy-action@4
+      with:
+        branch: gh-pages
+        folder: out
+        clean: true
